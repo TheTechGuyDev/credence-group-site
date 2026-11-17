@@ -4,6 +4,11 @@ DirectoryIndex page.php
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# Always use https
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Pages: / , /about.html , /about
 RewriteRule ^$ page.php?slug=index [L,QSA]
 RewriteRule ^([a-z0-9][a-z0-9-]*)\.html$ page.php?slug=$1 [L,QSA]
