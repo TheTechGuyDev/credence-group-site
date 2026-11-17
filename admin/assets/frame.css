@@ -1,0 +1,9 @@
+/* Loaded inside the page preview only while editing. */
+.cms-editing #cms-main *{cursor:pointer}
+.cms-editing [contenteditable=true]{cursor:text!important;outline:2px solid #2563eb!important;outline-offset:2px;background:rgba(37,99,235,.04)}
+.cms-editing .cms-hover{outline:1px dashed #2563eb!important;outline-offset:2px}
+.cms-editing .cms-selected{outline:2px solid #2563eb!important;outline-offset:2px}
+.cms-editing [data-cms-zone]{position:relative}
+.cms-editing [data-cms-zone] *{cursor:pointer}
+.cms-editing [data-cms-zone]:hover{outline:2px dashed #d9a520;outline-offset:-2px}
+.cms-editing .faq-item .faq-a{transition:none}

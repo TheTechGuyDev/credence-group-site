@@ -44,7 +44,7 @@ ul{list-style:none;margin:0;padding:0}
 @media(min-width:1024px){.desktop-nav{display:flex}.menu-toggle{display:none}.mobile-menu{display:none!important}}
 
 /* hero */
-.page-hero{position:relative;padding:8rem 0 4rem;text-align:center;color:#fff;background:linear-gradient(hsl(215 35% 20% / .9),hsl(215 35% 20% / .9)),url('../assets/hero-bg.jpg') center/cover}
+.page-hero{position:relative;padding:8rem 0 4rem;text-align:center;color:#fff;background:linear-gradient(hsl(215 35% 20% / .9),hsl(215 35% 20% / .9)),var(--hero-img,url('../assets/hero-bg.jpg')) center/cover}
 .page-hero h1{font-size:1.9rem;margin-bottom:1rem}
 .page-hero p{max-width:42rem;margin:0 auto;color:rgba(255,255,255,.8);font-size:1rem}
 .page-hero.large{padding:10rem 0 5rem}
@@ -52,7 +52,7 @@ ul{list-style:none;margin:0;padding:0}
 @media(min-width:768px){.page-hero{padding:10rem 0 5rem}.page-hero h1{font-size:3rem}.page-hero p{font-size:1.125rem}
 .page-hero.large{padding:12rem 0 7rem}.page-hero.large h1{font-size:3.75rem}.page-hero.large p{font-size:1.25rem}}
 
-.hero-home{min-height:85vh;display:flex;align-items:flex-end;padding:8rem 0 4rem;background:linear-gradient(90deg,rgba(255,255,255,.95),rgba(255,255,255,.8) 50%,rgba(255,255,255,.4)),url('../assets/hero-bg.jpg') center/cover}
+.hero-home{min-height:85vh;display:flex;align-items:flex-end;padding:8rem 0 4rem;background:linear-gradient(90deg,rgba(255,255,255,.95),rgba(255,255,255,.8) 50%,rgba(255,255,255,.4)),var(--hero-img,url('../assets/hero-bg.jpg')) center/cover}
 .hero-home h1{font-size:2.4rem;font-weight:800;margin:.75rem 0 1.25rem}
 .hero-home h1 em{color:var(--gold)}
 .hero-home p{max-width:36rem;color:hsl(220 30% 15% / .8);font-size:1.05rem}
@@ -120,7 +120,7 @@ h2.light{color:#fff}
 .adv h3{font-size:1.25rem;margin-bottom:.6rem;color:#fff}.adv p{color:rgba(255,255,255,.75);font-size:.95rem}
 
 /* CTA */
-.cta-banner{padding:5rem 0;text-align:center;color:#fff;background:linear-gradient(hsl(215 35% 20% / .95),hsl(215 35% 20% / .95)),url('../assets/hero-bg.jpg') center/cover}
+.cta-banner{padding:5rem 0;text-align:center;color:#fff;background:linear-gradient(hsl(215 35% 20% / .95),hsl(215 35% 20% / .95)),var(--hero-img,url('../assets/hero-bg.jpg')) center/cover}
 .cta-banner h2{font-size:2rem}@media(min-width:768px){.cta-banner h2{font-size:3rem}}
 .band-gold{background:var(--gold);color:var(--gold-fg);padding:4rem 0}
 .band-gold h2{font-size:1.9rem;margin-bottom:1rem}.band-gold p{margin-bottom:1.5rem;font-size:1.05rem}
@@ -185,7 +185,7 @@ h2.light{color:#fff}
 .footer-cta h3{color:#fff;font-size:1.5rem;margin-bottom:.4rem}
 @media(min-width:768px){.footer-cta-inner{flex-direction:row;align-items:center;justify-content:space-between}}
 .footer-grid{display:grid;gap:2.5rem;padding-top:3.5rem;padding-bottom:3rem}
-@media(min-width:768px){.footer-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(min-width:768px){.footer-grid{grid-template-columns:1.4fr repeat(var(--footer-cols,2),1fr)}}
 .brand-footer{color:#fff;font-size:1.4rem;margin-bottom:.75rem}
 .tagline{font-style:italic;margin-bottom:1.25rem}
 .foot-line{display:flex;gap:.6rem;align-items:center;margin-bottom:.6rem;font-size:.92rem}
@@ -201,3 +201,13 @@ h2.light{color:#fff}
 .nf h1{font-size:4rem;margin-bottom:1rem}.nf p{font-size:1.25rem;color:var(--muted-fg);margin-bottom:1.5rem}
 main{min-height:60vh}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* CMS additions */
+.brand-logo{display:inline-flex;align-items:center}.brand img{display:block;max-width:240px;object-fit:contain}
+.brand-footer img{max-width:220px}
+.foot-social{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem;font-size:.85rem}.foot-social a{text-decoration:underline;text-underline-offset:3px}
+.cms-img{width:100%;height:auto;border-radius:6px}
+.img-text{display:grid;gap:2.5rem;align-items:center}@media(min-width:900px){.img-text{grid-template-columns:1fr 1fr}}
+.cms-icon-img{width:48px;height:48px;object-fit:contain}
+.leader-photo>.cms-icon-img{width:100%;height:100%;object-fit:cover}
+.co-side>.cms-icon-img{width:100%;height:auto;max-height:180px;object-fit:contain}

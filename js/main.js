@@ -27,7 +27,8 @@
   // Contact form: static site has no backend, so open the visitor's email app
   // addressed to the group inbox. Swap this for a form service (Formspree etc.) later.
   var f=document.getElementById('contactForm');
-  if(f){
+  var to=(document.body.getAttribute('data-contact-email')||'inquiries@credencegroup.com').trim();
+  if(f&&!document.body.classList.contains('cms-editing')){
     var note=document.getElementById('formNote');
     f.addEventListener('submit',function(e){
       e.preventDefault();
@@ -35,8 +36,8 @@
           email=(d.get('email')||'').trim(),msg=(d.get('message')||'').trim();
       if(!first||!last||!email||!msg||!/^\S+@\S+\.\S+$/.test(email)){note.textContent='Please complete all fields with a valid email address.';return;}
       var body='Name: '+first+' '+last+'\nEmail: '+email+'\n\n'+msg;
-      window.location.href='mailto:inquiries@credencegroup.com?subject='+encodeURIComponent('Website inquiry from '+first+' '+last)+'&body='+encodeURIComponent(body);
-      note.textContent='Opening your email app to send the message. If nothing opens, email us at inquiries@credencegroup.com.';
+      window.location.href='mailto:'+to+'?subject='+encodeURIComponent('Website inquiry from '+first+' '+last)+'&body='+encodeURIComponent(body);
+      note.textContent='Opening your email app to send the message. If nothing opens, email us at '+to+'.';
     });
   }
 })();

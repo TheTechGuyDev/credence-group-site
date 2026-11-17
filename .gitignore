@@ -1,0 +1,6 @@
+data/config.php
+data/backups/
+data/login_attempts.json
+data/*.tmp*
+uploads/*
+!uploads/.htaccess

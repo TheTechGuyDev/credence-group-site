@@ -1,0 +1,140 @@
+{
+ "brand": {
+  "name": "The Credence Group",
+  "logo": "",
+  "logoHeight": 40,
+  "footerLogo": "",
+  "favicon": "favicon.ico"
+ },
+ "colors": {
+  "accent": "#d9a520",
+  "accentText": "#0f263d",
+  "dark": "#213045",
+  "text": "#1b2232"
+ },
+ "heroImage": "assets/hero-bg.jpg",
+ "menu": [
+  {
+   "label": "Home",
+   "url": "index.html",
+   "newTab": false
+  },
+  {
+   "label": "Our Companies",
+   "url": "companies.html",
+   "newTab": false
+  },
+  {
+   "label": "Philosophy",
+   "url": "philosophy.html",
+   "newTab": false
+  },
+  {
+   "label": "Leadership",
+   "url": "leadership.html",
+   "newTab": false
+  },
+  {
+   "label": "Careers",
+   "url": "careers.html",
+   "newTab": false
+  },
+  {
+   "label": "Contact",
+   "url": "contact.html",
+   "newTab": false
+  }
+ ],
+ "menuButton": {
+  "show": true,
+  "label": "Partner With Us",
+  "url": "contact.html"
+ },
+ "footerCta": {
+  "show": true,
+  "title": "Ready to partner with The Credence Group?",
+  "text": "Speak with our team about opportunities across the ecosystem.",
+  "buttonLabel": "Contact Us",
+  "buttonUrl": "contact.html"
+ },
+ "footer": {
+  "tagline": "Integrity in Ownership. Excellence in Execution.",
+  "email": "inquiries@credencegroup.com",
+  "phone": "",
+  "address": "Calgary, AB",
+  "columns": [
+   {
+    "title": "Quick Links",
+    "links": [
+     {
+      "label": "Home",
+      "url": "index.html"
+     },
+     {
+      "label": "Our Companies",
+      "url": "companies.html"
+     },
+     {
+      "label": "Investment Philosophy",
+      "url": "philosophy.html"
+     },
+     {
+      "label": "Leadership",
+      "url": "leadership.html"
+     },
+     {
+      "label": "Careers",
+      "url": "careers.html"
+     },
+     {
+      "label": "Contact",
+      "url": "contact.html"
+     }
+    ]
+   },
+   {
+    "title": "Our Companies",
+    "links": [
+     {
+      "label": "Credence Real Estate",
+      "url": ""
+     },
+     {
+      "label": "Credence Realty",
+      "url": ""
+     },
+     {
+      "label": "Credence Design Build",
+      "url": ""
+     },
+     {
+      "label": "Credence Mortgages",
+      "url": ""
+     },
+     {
+      "label": "Credence Capital",
+      "url": ""
+     },
+     {
+      "label": "Credence Consulting",
+      "url": ""
+     },
+     {
+      "label": "Credence Media",
+      "url": ""
+     }
+    ]
+   }
+  ],
+  "social": [],
+  "copyright": "© {year} The Credence Group. All Rights Reserved.",
+  "bottomRight": "Calgary, AB · Canada"
+ },
+ "contact": {
+  "formEmail": "inquiries@credencegroup.com"
+ },
+ "seo": {
+  "headCode": "",
+  "footerCode": ""
+ }
+}
